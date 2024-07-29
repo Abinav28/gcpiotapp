@@ -3,7 +3,7 @@ steps:
   args: ['build', '-t', 'gcr.io/fleet-geode-425017-g6/webapp5', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/webapp5']
+  args: ['push', 'gcr.io/fleet-geode-425017-g6/webapp5']
 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'gcloud'
